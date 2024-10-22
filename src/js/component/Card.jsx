@@ -78,8 +78,8 @@ const Card = ({ item, index, category }) => {
                     <Link to={"/details/" + category + "/" + index}>
                         <button className="btn btn-secondary" type="button">Learn more!</button>
                     </Link>
-                    <button className="btn btn-outline-dark btn-heart" onClick={handleFavorites} type="button">
-                        <i className="fa-solid fa-heart heartBtn" style={{ color: isFavorite ? "rgb(219, 0, 0)" : "black" }}></i>
+                    <button className="btn btn-outline-dark fa-solid fa-jedi" onClick={handleFavorites} type="button">
+                        <i className="fa-solid fa-thin fa-jedi" style={{ color: isFavorite ? "rgb(219, 0, 0)" : "black" }}></i>
                     </button>
                 </div>
             </div>
