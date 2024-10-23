@@ -4,10 +4,7 @@ import { Context } from "../store/appContext";
 import tatooine from "../../img/tatooine.jpg"
 import noImage from "../../img/no-image.jpg"
 import Bespin from "../../img/Bespin.jpg"
-// addToFavorites function is called when clicking on the heart icon. This function is going to add that item to the store.favorites.
-// Inside of the same functions have a way to delete the favorite if it is already a favorite.
-// for the <h5> tags bring in item.name variable. for the <p> use ternary operator depending on what the category is.
-// card button group div linked to the details page, button for icon for add to favorites
+import 'font-awesome/css/font-awesome.min.css'
 
 
 
