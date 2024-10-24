@@ -5,6 +5,7 @@ import tatooine from "../../img/tatooine.jpg"
 import noImage from "../../img/no-image.jpg"
 import Bespin from "../../img/Bespin.jpg"
 import 'font-awesome/css/font-awesome.min.css'
+import { FaGalacticRepublic } from "react-icons/fa";
 
 
 
@@ -73,10 +74,12 @@ const Card = ({ item, index, category }) => {
                 </p>
                 <div id="cardBtnGroup" className="d-flex justify-content-between mt-auto">
                     <Link to={"/details/" + category + "/" + index}>
-                        <button className="btn btn-secondary" type="button">Learn more!</button>
+                        <button className="btn btn-warning" type="button">Learn more!</button>
                     </Link>
-                    <button className="btn btn-outline-dark fa-solid fa-jedi" onClick={handleFavorites} type="button">
-                        <i className="fa-solid fa-thin fa-jedi" style={{ color: isFavorite ? "rgb(219, 0, 0)" : "black" }}></i>
+                    
+                    <button className="btn-heart btn-outline-dark" onClick={handleFavorites} type="button">
+                        <FaGalacticRepublic />
+                        <i className="fa-solid" style={{ color: isFavorite ? "#cd1818" : "red" }}></i>
                     </button>
                 </div>
             </div>
