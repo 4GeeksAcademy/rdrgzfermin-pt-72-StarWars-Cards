@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 import swLogo from "../../img/swLogo.png"
-
+import { FaGalacticSenate } from "react-icons/fa";
 
 // bring in {category} to the Navbar parameters
 // create function for handleDelete(index) {actions.deleteFavorites(index)}
@@ -28,6 +28,7 @@ export const Navbar = () => {
 
 				<button className="btn btn-info dropdown-toggle" id="favBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 					Favorites [{store.favorites.length}]
+					<FaGalacticSenate />
 				</button>
 				<ul className="dropdown-menu dropdown-menu-dark dropdown-menu-end mt-1">
 					{store.favorites.length > 0 ? (
