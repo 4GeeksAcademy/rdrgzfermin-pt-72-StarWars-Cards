@@ -27,7 +27,7 @@ export const Navbar = () => {
 
 
 				<button className="btn btn-info dropdown-toggle" id="favBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-					Favorites <FaGalacticSenate /> [{store.favorites.length}]
+					<FaGalacticSenate /> Favorites  [{store.favorites.length}]
 				</button>
 				<ul className="dropdown-menu dropdown-menu-dark dropdown-menu-end mt-1">
 					{store.favorites.length > 0 ? (
